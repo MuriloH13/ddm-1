@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setText("Clique aqui");
         btn.setOnClickListener(v -> {
             contador++;
-            tv.setText("Você clicou "  + Integer.toString(contador) + " Vezes");
+            tv.setText("Você clicou "  + contador + " Vezes");
         });
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
